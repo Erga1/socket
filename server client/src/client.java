@@ -24,6 +24,10 @@ public class client {
                 resp = in.readUTF();
 
                 if ( resp.substring(0,resp.length()-9).equals("exit")) {
+                    in.close();
+                    out.close();
+                    sok.close();
+                    sc.close();
                     break;
                 }
                 System.out.println("server: "+resp);

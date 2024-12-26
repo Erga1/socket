@@ -16,6 +16,10 @@ public class server {
             while(true) {
                 resp = in.readUTF();
                 if (resp.equals("exit")) {
+                    in.close();
+                    out.close();
+                    sok.close();
+                    so.close();
                     break;
                 }
                 System.out.println("Client: "+resp);
