@@ -8,7 +8,7 @@ public class server {
         String resp;
 
         try{
-            ServerSocket sok=new ServerSocket(12345);
+            ServerSocket sok=new ServerSocket(2020);
             Socket so=sok.accept();
             System.out.println("Connection Successful");
             in=new DataInputStream(so.getInputStream());

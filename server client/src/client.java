@@ -11,7 +11,7 @@ public class client {
         Scanner sc = new Scanner(System.in);
 
         try{
-            Socket sok=new Socket("localhost",12345);
+            Socket sok=new Socket("localhost",2020);
             System.out.println("Connection Successful");
             in=new DataInputStream(sok.getInputStream());
             out=new DataOutputStream(sok.getOutputStream());
